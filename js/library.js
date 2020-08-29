@@ -47,7 +47,7 @@ fileInput.addEventListener('change', function(e) {
     Object.keys(files).forEach(function(key) {
       var file = files[key];
       if (file.type.startsWith('image/')) {
-        const reader = new FileReader();
+        var reader = new FileReader();
         reader.onload = function(event) {
           addPictureToLibrary(file.name, event.target.result);
         };
