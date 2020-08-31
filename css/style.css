@@ -132,17 +132,15 @@ body.dark {
   border-radius: 10px;
   position: relative;
   transition: .3s all ease;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .image:hover {
   box-shadow: 0 0px 10px 1px #BBBBBB;
   cursor: pointer;
   transition: .3s all ease;
-}
-
-.image img {
-  width: 100%;
-  height: auto;
 }
 
 .image .image-name {
@@ -210,14 +208,13 @@ body.dark .image:hover {
 }
 
 @media (max-width: 1150px) {
+  #menu {
+    padding: 20px;
+  }
+
   .image {
     height: 200px;
     border-radius: 5px;
-  }
-
-  .image img {
-    height: 100%;
-    width: auto;
   }
 
   .image .image-name {

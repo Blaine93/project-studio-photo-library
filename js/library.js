@@ -36,8 +36,8 @@ uploadButton.addEventListener('click', function() {
 function addPictureToLibrary(name, picture) {
   var divElem = document.createElement('div');
   divElem.classList.add("image");
-  divElem.innerHTML = '<div class="image-name">' + name + '</div>'
-    + '<img src="' + picture + '" alt="' + name + '" />';
+  divElem.style.backgroundImage = 'url(' + picture + ')';
+  divElem.innerHTML = '<div class="image-name">' + name + '</div>';
   wrapperBlock.append(divElem);
 };
 
